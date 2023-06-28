@@ -1,0 +1,19 @@
+{
+    "calva.replConnectSequences": [
+        {
+            "name": "ClojureCLR Starter",
+            "projectRootPath": ["."],
+            "projectType": "custom",
+            "customJackInCommandLine": "docker compose exec -it dotnet-clojure /app/docker/start-repl.sh",
+            "autoSelectForJackIn": true,
+            "autoSelectForConnect": true,
+            "nReplPortFile": ["docker", ".nrepl-port"],
+            "menuSelections": {
+                "leinProfiles": [
+                    "dev"
+                ],
+            }
+        }
+    ],
+    "calva.autoConnectRepl": true,
+}
